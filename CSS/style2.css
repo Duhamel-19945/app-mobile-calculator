@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap'); 
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3c1687;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Space Mono', monospace;
+}
+
+.mobile {
+    width: 20rem;
+    background-color: #6e3dd6;
+    /* height: 80%; */
+    border-radius: 2rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black;  */
+    padding: 1rem;
+
+}
+
+.fa-solid{
+    font-size: 1rem;
+    width: 2rem;
+    height: 2rem;
+    /* background-color: rgba(40, 40, 40, 0.35);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: 50%; */
+    line-height: 2rem;
+    color: white;
+}
+
+.screen {
+    height: 6rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.screen small {
+    font-weight: bold;
+    color: #b9a3ec;
+    font-size: .9rem;
+}
+
+.screen h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin: auto;
+}
+
+.keypad {
+    background-color: white;
+    padding: 1.4rem 1rem;
+    border-radius: 2rem;
+    height: 23rem;
+    font-size: 1.4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+    grid-gap: .5rem;
+
+}
+
+.keypad button {
+    background-color: #e6e7e8;
+    border-radius: 1.5rem;
+    color: #808285;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.65rem;
+    border: none;
+}
+
+.keypad .key-c{
+    background-color: #fa386b;
+    color: #fff;
+}
+.keypad .op-equal {
+    background-color: #30c117;
+    color: #fff;
+}
+.keypad .op{
+    color: #222222;
+}
